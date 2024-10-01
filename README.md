@@ -1,4 +1,4 @@
-# Supplementary Material for manuscript "Ray tracing-based optimization of a 45 kW solar-thermal Cassegrain dish"
+# Supplementary Material for manuscript "Design and optical optimization of a 45kW beam-down solar-thermal concentrator"
 ## By Ramón Pujol-Nadal, Luis Guerreiro, and Gabriel Cardona
 
 Contents of the repository:
@@ -24,8 +24,7 @@ Contents of the repository:
 * `5.Flux_receiver`: Folder containing files related to the flux radiation on the receiver described in Section "3.5. Radiation distribution on the receiver".
   * `simulation_outputs`: Folder with the output files from the simulations of Cases 1 and 2 using the Spectral Analysis mode in OTSunWebApp (some files therein are compressed).
   * `ASTMG173-direct.txt`: Spectral direct solar radiation.
-  * `flux_distribution.py`: Script used to...
-  * `plots_tracking_error.py`: Script used to generate Figs. 12-13, which show radiation flux distribution for Cases 1 and 2. Generates the figures `heat_map_3D_Case_1.pdf`, `heat_map_3D_Case_2.pdf`, `heat_map_Case_1.pdf`, and `heat_map_Case_2.pdf`.
+  * `flux_distribution.py`: Script used to generate Figs. 12-13, which show radiation flux distribution for Cases 1 and 2. Generates the figures `heat_map_3D_Case_1.pdf`, `heat_map_3D_Case_2.pdf`, `heat_map_Case_1.pdf`, and `heat_map_Case_2.pdf`.
     
 * `6.Appendix`: Folder containing files related to the Appendix.
   * `simulation_outputs`: Folder with output files for each number of emitted rays: 10k, 50k, 100k, 200k, 500k, and 1M. 
