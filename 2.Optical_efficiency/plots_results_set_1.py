@@ -14,7 +14,7 @@ sns.set_style("ticks",{"xtick.direction": "in","ytick.direction": "in"})
 #                                  FILES    
 #------------------------------------------------------------------------------
 
-file_name1 = r'results_set_1a'
+file_name1 = r'results_set_1'
 	
 load_here = os.getcwd()
 
@@ -51,7 +51,7 @@ font = {'family': 'serif',
 fig, axes = plt.subplots(2, 3, figsize=(18, 10))
 
 sns.scatterplot(ax=axes[0,0], x=lines_1[:,0], y=lines_1[:,13], color = 'blue')
-axes[0,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[0,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[0,0].set_xlabel('Paraboloid focal distance [mm]',fontdict=font)
 axes[0,0].set_ylim([0.66, 0.77])
 axes[0,0].set_xlim(900,4600)
@@ -61,7 +61,7 @@ axes[0,0].set_xticks(list(range(1000, 4501,500)))
 axes[0,0].tick_params(labelsize=10)
 
 sns.scatterplot(ax=axes[0,1], x=lines_1[:,1], y=lines_1[:,13], color = 'blue')
-axes[0,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[0,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[0,1].set_xlabel('Hyperbola focus [mm]',fontdict=font)
 axes[0,1].set_ylim([0.66, 0.77])
 axes[0,1].set_xlim(50,950)
@@ -69,7 +69,7 @@ axes[0,1].set_xticks(list(range(100, 901,200)))
 axes[0,1].tick_params(labelsize=10)
 
 sns.scatterplot(ax=axes[0,2], x=lines_1[:,2], y=lines_1[:,13], color = 'blue')
-axes[0,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[0,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[0,2].set_xlabel('Receiver height distance [mm]',fontdict=font)
 axes[0,2].set_ylim([0.66, 0.77])
 axes[0,2].set_xlim(-450,650)
@@ -77,7 +77,7 @@ axes[0,2].set_xticks(list(range(-400, 601,200)))
 axes[0,2].tick_params(labelsize=10)
 
 sns.scatterplot(ax=axes[1,0], x=lines_1[:,3], y=lines_1[:,13], color = 'blue')
-axes[1,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[1,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[1,0].set_xlabel('Receiver aperture diameter [mm]',fontdict=font)
 axes[1,0].set_xlim(190,250)
 axes[1,0].set_xticks(list(range(200, 241,20)))
@@ -85,13 +85,13 @@ axes[1,0].set_ylim([0.66, 0.77])
 axes[1,0].tick_params(labelsize=10)
 
 sns.scatterplot(ax=axes[1,1], x=lines_1[:,4], y=lines_1[:,13], color = 'blue')
-axes[1,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[1,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[1,1].set_xlabel('Acceptance angle [deg.]',fontdict=font)
 axes[1,1].set_ylim([0.66, 0.77])
 axes[1,1].tick_params(labelsize=10)
 
 sns.scatterplot(ax=axes[1,2], x=lines_1[:,5], y=lines_1[:,13], color = 'blue')
-axes[1,0].set_ylabel("Otical efficiency",fontdict=font)
+axes[1,0].set_ylabel("Optical efficiency",fontdict=font)
 axes[1,2].set_xlabel('Truncation factor',fontdict=font)
 axes[1,2].set_ylim([0.66, 0.77])
 axes[1,2].set_xlim(0.15,0.85)
@@ -101,7 +101,7 @@ axes[1,2].tick_params(labelsize=10)
 
 
 
-plt.savefig('Optical_Efficiency_set_1a'+'.png', format='png', dpi=500, bbox_inches='tight')
+plt.savefig('Optical_Efficiency_set_1'+'.png', format='png', dpi=500, bbox_inches='tight')
 
 
 #------------------------------------------------------------------------------     
